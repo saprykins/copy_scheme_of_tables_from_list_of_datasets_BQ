@@ -13,3 +13,21 @@ Create tables from file:
 ```
 bq mk --table project:dataset.table source_file.json
 ```
+
+If need to copy bq tables:  
+```
+bq cp proj:ds.source_table proj:ds.target_table
+```
+
+If need to create bq view, sql was used:  
+```
+="create view `"&C91&"` as (select * from `"&B91&"`);"
+```
+or
+```
+="create view `proj.ds.source_table` as (select * from `proj.ds.target_table`); 
+```
+Replace the view
+```
+="create or replace view `"&C91&"` as (select * from `"&C91&"`);"
+```
