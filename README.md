@@ -31,3 +31,7 @@ Replace the view
 ```
 ="create or replace view `"&C91&"` as (select * from `"&C91&"`);"
 ```
+Delete view
+```
+DROP VIEW IF EXISTS `ari-dp-prt-dev.edm_customer_c1.b_child`;
+```
